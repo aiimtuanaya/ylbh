@@ -2,10 +2,12 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db = "ylbh";
+$db = "ylbh"; // ganti sesuai nama database kamu
 
-$conn = new mysqli($host, $user, $pass, $db);
-if ($conn->connect_error) {
-    die("Koneksi gagal: " . $conn->connect_error);
+$conn = mysqli_connect($host, $user, $pass, $db);
+
+// Cek koneksi
+if (!$conn) {
+    die("Koneksi database gagal: " . mysqli_connect_error());
 }
 ?>
