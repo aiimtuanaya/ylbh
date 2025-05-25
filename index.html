@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Beranda - YLBH</title>
+    <link rel="icon" href="aset/YLBH.png" type="image/x-icon" />
+
+    <!-- Bootstrap CSS & Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbarMain"
+    data-bs-offset="80"
+    tabindex="0"
+  >
+    <!-- Navbar -->
+  <nav id="navbarMain" class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+    <div class="container" style="max-width: 960px">
+      <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+        <img src="aset/YLBH.png" alt="Logo YLBH" width="30" height="30" class="me-2" />
+        YLBH
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
+          <li class="nav-item dropdown me-2">
+            <a class="nav-link dropdown-toggle" href="#" id="layananDropdown" role="button" data-bs-toggle="dropdown">Layanan</a>
+            <ul class="dropdown-menu dropdown-menu-dark shadow">
+              <li><a class="dropdown-item" href="pidana.html">Hukum Pidana</a></li>
+              <li><a class="dropdown-item" href="perdata.html">Hukum Perdata</a></li>
+              <li><a class="dropdown-item" href="bisnis.html">Konsultasi Bisnis</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#portofolio">Portofolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Hubungi Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <main>
+      <!-- Header -->
+      <header class="text-center py-5">
+        <div class="container" style="max-width: 960px">
+          <h1 class="display-4 fw-bold">Solusi Hukum Profesional</h1>
+          <p class="lead">
+            Melayani dengan Integritas, Komitmen, dan Kompetensi
+          </p>
+        </div>
+      </header>
+
+      <!-- Profil -->
+      <section id="profil" class="py-5 bg-light">
+        <div class="container" style="max-width: 960px">
+          <h2 class="fw-bold text-center mb-4">Profil</h2>
+          <p class="text-center">
+            YLBH adalah lembaga bantuan hukum yang berdedikasi memberikan
+            layanan hukum kepada masyarakat umum dengan pendekatan profesional
+            dan etis.
+          </p>
+        </div>
+      </section>
+
+      <!-- Tim Pengacara -->
+      <section id="tim" class="py-5 bg-light">
+        <div class="container" style="max-width: 960px">
+          <h2 class="fw-bold mb-4 text-center">Tim Pengacara</h2>
+          <div class="row text-center g-4">
+            <!-- Adv. John Doe -->
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+              <div class="card h-100">
+                <img
+                  src="aset/fotopengacara.jpg"
+                  class="card-img-top"
+                  alt="Lawyer"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Adv. John Doe, SH</h5>
+                  <p class="card-text">
+                    Ahli hukum pidana dengan pengalaman lebih dari 10 tahun
+                    dalam menangani perkara kriminal berat.
+                  </p>
+                  <button
+                    class="btn btn-outline-primary btn-sm toggle-profil"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#profilJohn"
+                    aria-expanded="false"
+                  >
+                    <span class="label-text">Lihat Profil Lengkap</span>
+                    <i class="bi bi-chevron-down rotate-icon ms-1"></i>
+                  </button>
+                  <div class="collapse mt-2" id="profilJohn">
+                    <p class="card-text">
+                      John telah menangani lebih dari 250 kasus pidana berat dan
+                      dikenal karena keahliannya dalam strategi litigasi tingkat
+                      tinggi. Ia juga aktif dalam seminar nasional sebagai
+                      pembicara di bidang hukum pidana.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Adv. Maria Sari -->
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+              <div class="card h-100">
+                <img
+                  src="aset/fotopengacara.jpg"
+                  class="card-img-top"
+                  alt="Lawyer"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Adv. Maria Sari, SH., MH</h5>
+                  <p class="card-text">
+                    Spesialis hukum perdata dan keluarga, menyelesaikan sengketa
+                    dengan pendekatan hukum dan mediasi.
+                  </p>
+                  <button
+                    class="btn btn-outline-primary btn-sm toggle-profil"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#profilMaria"
+                    aria-expanded="false"
+                  >
+                    <span class="label-text">Lihat Profil Lengkap</span>
+                    <i class="bi bi-chevron-down rotate-icon ms-1"></i>
+                  </button>
+                  <div class="collapse mt-2" id="profilMaria">
+                    <p class="card-text">
+                      Maria telah membantu ratusan klien dalam penyelesaian
+                      sengketa waris, perceraian, dan hak asuh anak. Ia dikenal
+                      sebagai mediator yang empatik dan berorientasi pada solusi
+                      damai.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Adv. Rizal Hakim -->
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+              <div class="card h-100">
+                <img
+                  src="aset/fotopengacara.jpg"
+                  class="card-img-top"
+                  alt="Lawyer"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Adv. Rizal Hakim, SH</h5>
+                  <p class="card-text">
+                    Berpengalaman dalam konsultasi hukum bisnis dan kontrak
+                    investasi nasional maupun internasional.
+                  </p>
+                  <button
+                    class="btn btn-outline-primary btn-sm toggle-profil"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#profilRizal"
+                    aria-expanded="false"
+                  >
+                    <span class="label-text">Lihat Profil Lengkap</span>
+                    <i class="bi bi-chevron-down rotate-icon ms-1"></i>
+                  </button>
+                  <div class="collapse mt-2" id="profilRizal">
+                    <p class="card-text">
+                      Rizal mendampingi perusahaan dalam negosiasi kontrak, due
+                      diligence, dan proses merger-akuisisi. Ia memiliki
+                      jaringan luas di kalangan pebisnis dan regulator di
+                      tingkat nasional.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Layanan -->
+      <section id="layanan" class="py-5 bg-light">
+        <div class="container" style="max-width: 960px">
+          <h2 class="text-center fw-bold mb-4">Layanan Kami</h2>
+          <div class="row g-4">
+            <!-- Pidana -->
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow">
+                <div
+                  class="card-body scroll-fade"
+                  id="pidana"
+                  data-aos="fade-up"
+                >
+                  <h5 class="card-title">Hukum Pidana</h5>
+                  <p class="card-text">
+                    Pendampingan dari penyidikan hingga kasasi dan PK.
+                  </p>
+                  <a
+                    href="pidana.html"
+                    class="btn btn-primary btn-sm btn-animated"
+                    >Detail</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Perdata -->
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow">
+                <div
+                  class="card-body scroll-fade"
+                  id="perdata"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <h5 class="card-title">Hukum Perdata</h5>
+                  <p class="card-text">
+                    Sengketa warisan, perceraian, kontrak dan lainnya.
+                  </p>
+                  <a
+                    href="perdata.html"
+                    class="btn btn-primary btn-sm btn-animated"
+                    >Detail</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Bisnis -->
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow">
+                <div
+                  class="card-body scroll-fade"
+                  id="bisnis"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <h5 class="card-title">Konsultasi Bisnis</h5>
+                  <p class="card-text">
+                    Kontrak, legalitas usaha, merger dan akuisisi.
+                  </p>
+                  <a
+                    href="bisnis.html"
+                    class="btn btn-primary btn-sm btn-animated"
+                    >Detail</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portofolio -->
+      <section
+        id="portofolio"
+        class="py-5 position-relative text-white portofolio-bg"
+      >
+        <div class="overlay-blur"></div>
+        <div
+          class="container position-relative"
+          style="max-width: 960px; z-index: 2"
+        >
+          <h2 class="fw-bold text-center mb-4">Portofolio</h2>
+          <p class="text-center scroll-fade mb-5">
+            Kami telah menangani ratusan kasus dengan berbagai latar belakang
+            hukum dan berhasil memberi hasil terbaik bagi klien.
+          </p>
+
+          <div
+            id="carouselPortofolio"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row text-center">
+                  <div class="col-md">
+                    <div
+                      class="card bg-dark bg-opacity-75 text-white h-100 shadow"
+                    >
+                      <div class="card-body">
+                        <h5 class="card-title">Kasus Pidana Berat</h5>
+                        <p class="card-text">
+                          Pendampingan terdakwa kasus pembunuhan hingga putusan
+                          bebas.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md">
+                    <div
+                      class="card bg-dark bg-opacity-75 text-white h-100 shadow"
+                    >
+                      <div class="card-body">
+                        <h5 class="card-title">Sengketa Waris</h5>
+                        <p class="card-text">
+                          Penyelesaian damai dalam sengketa hak waris keluarga
+                          besar.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md">
+                    <div
+                      class="card bg-dark bg-opacity-75 text-white h-100 shadow"
+                    >
+                      <div class="card-body">
+                        <h5 class="card-title">Perceraian Kompleks</h5>
+                        <p class="card-text">
+                          Penyelesaian perceraian multi-aset dengan hak asuh
+                          anak.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md">
+                    <div
+                      class="card bg-dark bg-opacity-75 text-white h-100 shadow"
+                    >
+                      <div class="card-body">
+                        <h5 class="card-title">Audit Legalitas Usaha</h5>
+                        <p class="card-text">
+                          Pendampingan audit hukum UMKM dalam ekspansi ke luar
+                          negeri.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md">
+                    <div
+                      class="card bg-dark bg-opacity-75 text-white h-100 shadow"
+                    >
+                      <div class="card-body">
+                        <h5 class="card-title">Investasi Startup</h5>
+                        <p class="card-text">
+                          Negosiasi kontrak dan pengamanan saham investor asing.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kontak -->
+      <section id="kontak" class="bg-light py-5">
+        <div class="container text-center">
+          <h2 class="fw-bold mb-4">Alamat Kantor</h2>
+          <p>Alamat: Jl. Sultan Babullah No.12, Kota Ambon, Maluku</p>
+          <p>Email: lexpartners@example.com | Telepon: (0911) 123456</p>
+
+          <!-- Tombol WhatsApp -->
+          <div
+            class="d-flex flex-column flex-md-row justify-content-center gap-3 mt-3"
+          >
+            <a
+              href="https://wa.me/6281234567890"
+              class="btn btn-success"
+              target="_blank"
+            >
+              <i class="bi bi-whatsapp me-2"></i>Hubungi via WhatsApp Umum
+            </a>
+            <!-- Tombol Konsultasi dengan Dropdown -->
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn btn-outline-success dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-whatsapp me-2"></i>Konsultasi dengan Pakar Hukum
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end shadow">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://wa.me/6281111111111?text=Halo%2C%20saya%20butuh%20konsultasi%20hukum%20pidana"
+                    target="_blank"
+                  >
+                    <i class="bi bi-shield-lock me-2"></i>Hukum Pidana
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://wa.me/6282222222222?text=Halo%2C%20saya%20butuh%20konsultasi%20hukum%20perdata"
+                    target="_blank"
+                  >
+                    <i class="bi bi-file-earmark-text me-2"></i>Hukum Perdata
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://wa.me/6283333333333?text=Halo%2C%20saya%20ingin%20konsultasi%20bisnis"
+                    target="_blank"
+                  >
+                    <i class="bi bi-briefcase me-2"></i>Konsultasi Bisnis
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Peta Lokasi -->
+          <div class="mt-5">
+            <h5 class="fw-semibold mb-3">Lokasi Kantor Kami</h5>
+            <div
+              class="mx-auto shadow rounded overflow-hidden border border-2 border-dark"
+              style="max-width: 720px; height: 300px"
+            >
+              <iframe
+                src="https://www.google.com/maps?q=Ambon&output=embed"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal Login -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content p-3">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Login Admin</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form method="POST" action="auth/login.php">
+            <div class="mb-3">
+              <label class="form-label">Username</label>
+              <input type="text" name="username" class="form-control" required />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Password</label>
+              <input type="password" name="password" class="form-control" required />
+            </div>
+            <div class="d-grid">
+              <button class="btn btn-primary">Login</button>
+            </div>
+          </form>
+          <hr />
+          <p class="text-center small mb-1">Belum punya akun?</p>
+          <a href="auth/login-register.php" class="btn btn-outline-secondary w-100">Daftar di Sini</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <div class="container" style="max-width: 960px">
+        <small>&copy; 2025 YLBH. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

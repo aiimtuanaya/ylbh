@@ -1,0 +1,211 @@
+/* Typography & General */
+body {
+  font-family: "Segoe UI", sans-serif;
+  scroll-behavior: smooth;
+  background-color: #e0e0e0; /* Abu-abu sedikit lebih gelap */
+  color: #333; /* Warna teks */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #800000 !important; /* Maron */
+}
+
+.navbar .nav-link {
+  transition: color 0.3s ease;
+}
+.navbar .nav-link.active {
+  color: #e0e0e0 !important;
+  font-weight: bold;
+}
+.navbar-brand i {
+  transition: transform 0.3s ease;
+}
+.navbar-brand:hover i {
+  transform: rotate(-5deg) scale(1.5);
+}
+
+/* Section Scroll Offset */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(rgba(68, 65, 65, 0.199), rgba(128, 0, 0, 0.6)), url("aset/fotopengacara.jpg") center/cover no-repeat;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+header h1 {
+  animation: fadeDown 1s ease-in-out;
+}
+
+/* Animasi Header */
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tombol Animasi */
+.btn-animated {
+  transition: all 0.3s ease-in-out;
+  transform-origin: center;
+}
+.btn-animated:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #f54d0a !important;
+  border-color: #800000 !important;
+}
+
+/* Scroll Fade untuk animasi manual */
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+.scroll-fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Kartu Layanan dan Tim */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.card .btn {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.card:hover .btn {
+  opacity: 1;
+}
+.card img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+/* Efek Ikon Tombol Collapse */
+.rotate-icon {
+  transition: transform 0.3s ease;
+}
+button[aria-expanded="true"] .rotate-icon {
+  transform: rotate(180deg);
+}
+
+/* Collapse transition */
+.collapse {
+  transition: height 0.4s ease !important;
+}
+
+/* Responsif tambahan */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tombol Warna */
+.btn-primary {
+  background-color: #800000;
+  border-color: #800000;
+}
+
+.btn-primary:hover {
+  background-color: #a52a2a;
+  border-color: #a52a2a;
+}
+
+.btn-outline-primary {
+  color: #800000;
+  border-color: #800000;
+}
+
+.btn-outline-primary:hover {
+  background-color: #800000;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: #800000;
+  color: white;
+}
+
+/* Utility */
+.text-center {
+  text-align: center;
+}
+
+#portofolio {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Background image */
+#portofolio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('aset/YLBH.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; /* responsive size */
+  opacity: 1.7; /* transparansi watermark */
+  filter: blur(1.5px); /* efek blur halus */
+  z-index: 0;
+}
+
+/* Dark overlay */
+#portofolio::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* overlay gelap */
+  z-index: 0;
+}
+
+/* Konten di atas background */
+#portofolio .container {
+  position: relative;
+  z-index: 2;
+  color: white; /* teks jadi putih agar kontras */
+}
+
+.portofolio-bg {
+  background: url('aset/YLBH.png') center center / contain no-repeat;
+  background-color: #303030c9; /* fallback */
+  background-blend-mode: overlay;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.overlay-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
